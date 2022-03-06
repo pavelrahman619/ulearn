@@ -6,8 +6,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 $purple: #893789;
 $green: #37887A;
 $yellow: #F19E3C;
-$blue: #373F88;
+$darkblue: #373F88;
 $orange: #F16A3B;
+$lightblue: #00AEEF;
+
+.main-header{
+  background-color:$lightblue;
+  padding: 1rem 0rem;
+}
 
 .example-spacer {
   flex: 1 1 auto;
@@ -28,19 +34,19 @@ $orange: #F16A3B;
     justify-content: center;
   }
 
-  .btn-1{
+  .btn-0{
     background-color: $purple;
   }
-  .btn-2{
+  .btn-1{
     background-color: $green;
   }
-  .btn-3{
+  .btn-2{
     background-color: $yellow;
   }
-  .btn-4{
-    background-color: $blue;
+  .btn-3{
+    background-color: $darkblue;
   }
-  .btn-5{
+  .btn-4{
     background-color: $orange;
   }
 }

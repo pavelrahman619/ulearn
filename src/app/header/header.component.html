@@ -1,69 +1,26 @@
-<mat-toolbar>
-  <mat-toolbar-row>
-    <li *ngFor="let item of employees">
-  </mat-toolbar-row>
-  <mat-toolbar-row>
-    <img src="assets/images/logo.png" alt="logo">
+<div class="main-header">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <img src="assets/images/logo.png" alt="logo">
 
-    <span class="example-spacer"></span>
+      <span class="example-spacer"></span>
 
-    <a href="#"><span class="toolbar-items">HOME</span></a>
-    <a href="#"><span class="toolbar-items">ABOUT US</span></a>
-    <a href="#"><span class="toolbar-items">PROJECT</span></a>
-    <a href="#"><span class="toolbar-items">DOCUMENT</span></a>
-    <a href="#"><span class="toolbar-items">NOTICE BOARD</span></a>
-    <a href="#"><span class="toolbar-items">CONTACT</span></a>
-  </mat-toolbar-row>
+      <a href="#"><span class="toolbar-items">HOME</span></a>
+      <a href="#"><span class="toolbar-items">ABOUT US</span></a>
+      <a href="#"><span class="toolbar-items">PROJECT</span></a>
+      <a href="#"><span class="toolbar-items">DOCUMENT</span></a>
+      <a href="#"><span class="toolbar-items">NOTICE BOARD</span></a>
+      <a href="#"><span class="toolbar-items">CONTACT</span></a>
+    </mat-toolbar-row>
 
-  <mat-toolbar-row class="sub-toolbar">
-    <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item btn-1">Settlement
-      <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Adjumani</button>
-      <button mat-menu-item>BidiBidi</button>
-      <button mat-menu-item>Inwepi</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item btn-2">Geographic Scope
-      <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Adjumani</button>
-      <button mat-menu-item>BidiBidi</button>
-      <button mat-menu-item>Inwepi</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item btn-3">Types of Organization
-      <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Adjumani</button>
-      <button mat-menu-item>BidiBidi</button>
-      <button mat-menu-item>Inwepi</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item btn-4">Thematic Areas of Work
-      <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Adjumani</button>
-      <button mat-menu-item>BidiBidi</button>
-      <button mat-menu-item>Inwepi</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item btn-5">Target Demographic
-      <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>Adjumani</button>
-      <button mat-menu-item>BidiBidi</button>
-      <button mat-menu-item>Inwepi</button>
-    </mat-menu>
-
-  </mat-toolbar-row>
-
-
-</mat-toolbar>
-
-
+    <mat-toolbar-row class="sub-toolbar">
+      <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item "
+        *ngFor="let menuButton of menuButtons; let i=index" [ngClass]="'btn-' + i">{{menuButton.menuName}}
+        <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>items</button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
