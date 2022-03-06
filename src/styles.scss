@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$purple: #893789;
+$green: #37887A;
+$yellow: #F19E3C;
+$blue: #373F88;
+$orange: #F16A3B;
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar-items{
+  margin-right:20px;
+}
+
+.sub-toolbar{
+  justify-content: center;
+
+  .sub-toolbar-item {
+    margin-right:20px;
+    color:white;
+    border-radius:20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-1{
+    background-color: $purple;
+  }
+  .btn-2{
+    background-color: $green;
+  }
+  .btn-3{
+    background-color: $yellow;
+  }
+  .btn-4{
+    background-color: $blue;
+  }
+  .btn-5{
+    background-color: $orange;
+  }
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+
