@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Employee } from '../hero';
 
 @Component({
   selector: 'app-header',

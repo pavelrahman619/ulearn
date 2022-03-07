@@ -1,6 +1,6 @@
 <div class="main-header">
   <mat-toolbar>
-    <mat-toolbar-row>
+    <mat-toolbar-row class="main-toolbar">
       <img src="assets/images/logo.png" alt="logo">
 
       <span class="example-spacer"></span>
@@ -14,13 +14,14 @@
     </mat-toolbar-row>
 
     <mat-toolbar-row class="sub-toolbar">
-      <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item "
+      <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item"
         *ngFor="let menuButton of menuButtons; let i=index" [ngClass]="'btn-' + i">{{menuButton.menuName}}
         <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>items</button>
+        <button mat-menu-item>item</button>
       </mat-menu>
+
     </mat-toolbar-row>
   </mat-toolbar>
 </div>

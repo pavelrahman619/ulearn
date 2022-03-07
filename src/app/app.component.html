@@ -2,7 +2,33 @@
 
 
 
-<mat-icon aria-hidden="false">search<input type="Search"></mat-icon>
 
+
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    1
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <mat-icon aria-hidden="false">search<input type="Search"></mat-icon>
+
+    </div>
+    <a href="#">View Filtered Data as Table</a>
+
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-card class="organization-card" *ngFor="let n of numSequence(6)">
+  <mat-card-title>Organization Name</mat-card-title>
+  <mat-card-content>
+    <p>Location of headquarters: <b>Adjumani</b></p>
+    <p>Geographic Scope: <b>National</b></p>
+    <p>Type of Organization: <b>Refugee-led organization</b></p>
+    <p>Thematic areas of work: <b>Health</b></p>
+    <p>Target Demographic: <b>Women</b></p>
+
+  </mat-card-content>
+
+</mat-card>
 
 <app-footer></app-footer>

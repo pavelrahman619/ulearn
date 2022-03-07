@@ -11,6 +11,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 
 
@@ -29,6 +33,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     MatMenuModule,
     MatGridListModule,
+    MatFormFieldModule,
+    MatCardModule
 
   ],
   providers: [],

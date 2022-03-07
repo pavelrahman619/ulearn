@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ulearn';
+  search : String ="";
+
+    //function to return list of numbers from 0 to n-1
+    numSequence(n: number): Array<number> {
+      return Array(n);
+    }
 }
+
