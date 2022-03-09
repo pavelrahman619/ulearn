@@ -14,31 +14,16 @@
     </mat-toolbar-row>
 
     <mat-toolbar-row class="sub-toolbar">
-      <!-- <button mat-button [matMenuTriggerFor]="menu" class="sub-toolbar-item"
-        *ngFor="let menuButton of menuButtons; let i=index" [ngClass]="'btn-' + i">{{menuButton.menuName}}
-        <mat-icon class="toolbar-menu-icon" aria-hidden="false">expand_more</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>item</button>
-      </mat-menu> -->
-
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
+      <div class="dropdown" *ngFor="let menuButton of menuButtons; let i=index">
+        <button class="sub-toolbar-item dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false"
+          [ngClass]="'btn-' + i">
+          {{menuButton.menuName}}
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li *ngFor="let menuButtonList of menuButton.menuList; let i=index"><a class="dropdown-item" href="#">{{menuButtonList}}</a></li>
         </ul>
       </div>
-
-      <!-- <ul >
-      <li *ngFor="let i of menuButtons;">{{i.menuName}}</li>
-        <ul>
-          <li *ngFor="let j of menuButtons">{{j.menuList}}</li>
-        </ul>
-      </ul> -->
 
     </mat-toolbar-row>
   </mat-toolbar>

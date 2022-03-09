@@ -15,15 +15,15 @@ $yellow: #f19e3c;
 $darkblue: #373f88;
 $orange: #f16a3b;
 $lightblue: #00aeef;
-$grey: #F3F3F3;
-$darkgrey: #7A776C;
+$grey: #f3f3f3;
+$darkgrey: #7a776c;
 
 /* BACKGROUND COLOR HELPERS */
-.bg-grey{
+.bg-grey {
   background-color: $grey;
 }
 
-.bg-darkgrey{
+.bg-darkgrey {
   background-color: $darkgrey;
 }
 
@@ -46,6 +46,7 @@ $darkgrey: #7A776C;
 
 .sub-toolbar {
   justify-content: center;
+  padding: 3rem 0rem !important;
 
   .sub-toolbar-item {
     margin-right: 20px;
@@ -95,37 +96,50 @@ mat-grid-tile {
   background-repeat: no-repeat;
   height: 366px;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
 }
 
- /* ORGANIZATION */
+/* ORGANIZATION */
 .organization {
-  .org-mat-icon-1{
-    font-size:2.5rem;
+  .org-mat-icon-1 {
+    font-size: 2.5rem;
   }
 
-  .org-mat-icon-2{
-    font-size:1rem;
+  .org-mat-icon-2 {
+    font-size: 1rem;
   }
 
-  h2{
-    font-size:2rem;
+  h2 {
+    font-size: 2rem;
   }
 }
 
+/* TABLE PAGE */
+.table-menu {
+  padding: 2rem 0rem;
+  font-weight: bold;
 
+  .mat-icon-1 {
+    margin-right: 1rem;
+  }
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  border-radius: 50% !important;
+  margin: 0 5px;
+}
 
 /* MAIN PAGE */
 body {
-  font: normal 16px/1.5 'Roboto', sans-serif;
-  padding: 130px 0 0 0;
+  font: normal 16px/1.5 "Roboto", sans-serif;
+  padding: 0 0 0 0;
   background: #f1f1f1;
 }
 
-
 /* RESET STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.chart-position{
+.chart-position {
   display: flex;
   transform: rotate(90deg);
 }
@@ -139,7 +153,6 @@ body {
 .chart-skills::before {
   box-sizing: border-box;
 }
-
 
 /* CHART-SKILLS STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -157,17 +170,17 @@ body {
 }
 
 .chart-skills::before {
-  content: '';
+  content: "";
   width: inherit;
   height: inherit;
-  border: 45px solid rgba(211, 211, 211, .3);
+  border: 45px solid rgba(211, 211, 211, 0.3);
   border-bottom: none;
   border-top-left-radius: 175px;
   border-top-right-radius: 175px;
 }
 
 .chart-skills::after {
-  content: 'Top Skills';
+  content: "Top Skills";
   left: 50%;
   bottom: 10px;
   transform: translateX(-50%);
@@ -190,7 +203,7 @@ body {
   transform-style: preserve-3d;
   backface-visibility: hidden;
   animation-fill-mode: forwards;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
   animation-timing-function: linear;
 }
 
@@ -204,14 +217,14 @@ body {
   z-index: 3;
   border-color: firebrick;
   animation-name: rotate-two;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .chart-skills li:nth-child(3) {
   z-index: 2;
   border-color: steelblue;
   animation-name: rotate-three;
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 .chart-skills li:nth-child(4) {
@@ -223,9 +236,9 @@ body {
 
 .chart-skills span {
   position: absolute;
-  font-size: .85rem;
+  font-size: 0.85rem;
   backface-visibility: hidden;
-  animation: fade-in .4s linear forwards;
+  animation: fade-in 0.4s linear forwards;
 }
 
 .chart-skills li:nth-child(1) span {
@@ -238,14 +251,14 @@ body {
   top: 20px;
   left: 10px;
   transform: rotate(-79.2deg);
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .chart-skills li:nth-child(3) span {
   top: 18px;
   left: 10px;
   transform: rotate(-140.4deg);
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 .chart-skills li:nth-child(4) span {
@@ -254,7 +267,6 @@ body {
   transform: rotate(-180deg);
   animation-delay: 1.2s;
 }
-
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -316,4 +328,3 @@ body {
     opacity: 1;
   }
 }
-
