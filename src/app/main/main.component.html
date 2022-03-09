@@ -3,10 +3,10 @@
     <div class="col-sm-4">
       <div class="chart-position">
         <ul class="chart-skills">
-                <li>
-                  <span>CSS</span>
-                </li>
-                <li>
+          <li *ngFor="let menuButton of menuButtons">
+            <span>{{menuButton.menuName}}</span>
+          </li>
+          <!-- <li>
                   <span>HTML</span>
                 </li>
                 <li>
@@ -14,8 +14,8 @@
                 </li>
                 <li>
                   <span>Python</span>
-                </li>
-          </ul>
+                </li> -->
+        </ul>
       </div>
 
     </div>
@@ -25,23 +25,24 @@
           <mat-icon aria-hidden="false">search<input type="Search"></mat-icon>
         </div>
         <div class="col-6">
-              <a href="#">View Filtered Data as Table</a>
+          <a href="#">View Filtered Data as Table</a>
         </div>
       </div>
+      <br>
       <div class="row">
-        <div class="col-6" *ngFor="let n of numSequence(6)">
-          <mat-card class="organization-card" >
-              <mat-card-title>Organization Name</mat-card-title>
-                <mat-card-content>
-                  <p>Location of headquarters: <b>Adjumani</b></p>
-                  <p>Geographic Scope: <b>National</b></p>
-                  <p>Type of Organization: <b>Refugee-led organization</b></p>
-                  <p>Thematic areas of work: <b>Health</b></p>
-                  <p>Target Demographic: <b>Women</b></p>
+        <div class="col-md-6 col-12 d-flex justify-content-center" *ngFor="let n of numSequence(6)">
+          <mat-card class="organization-card">
+            <mat-card-title>Organization Name</mat-card-title>
+            <mat-card-content>
+              <p>Location of headquarters: <b>Adjumani</b></p>
+              <p>Geographic Scope: <b>National</b></p>
+              <p>Type of Organization: <b>Refugee-led organization</b></p>
+              <p>Thematic areas of work: <b>Health</b></p>
+              <p>Target Demographic: <b>Women</b></p>
 
-                </mat-card-content>
+            </mat-card-content>
 
-            </mat-card>
+          </mat-card>
         </div>
       </div>
     </div>
