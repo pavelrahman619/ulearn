@@ -156,6 +156,7 @@ body {
   position: absolute;
   top: 38%;
   left: -6%;
+
 }
 .chart-skills {
   margin: 50% auto;
@@ -192,20 +193,41 @@ body {
   border-top-left-radius: 175px;
   border-top-right-radius: 175px;
 }
+.chart-position{
+  .resetBtn{
+    position: absolute;
+    cursor: pointer;
+    height: 140px;
+    width: 80px;
+    background-color: #00aeef;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0 100px 100px 0;
+    transform: rotate(-90deg);
+    color: #ffffff;
+    left: 39%;
+    top: 47.8%;
+    z-index: 5;
+  }
 
-.chart-skills::after {
-  content: "Top Skills";
-  left: 50%;
-  bottom: 0px;
-  transform: translateX(-50%);
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: white;
-  background-color: #00aeef;
-  height: 84px;
-  width: 160px;
-  border-radius: 150px 150px 0 0;
+
 }
+
+// .chart-skills::after {
+//   content: "Reset";
+//   left: 50%;
+//   bottom: 0px;
+//   transform: translateX(-50%);
+//   font-size: 1.1rem;
+//   font-weight: bold;
+//   color: white;
+//   background-color: #00aeef;
+//   height: 84px;
+//   width: 160px;
+//   border-radius: 150px 150px 0 0;
+// }
 
 .chart-skills li {
   position: absolute;
@@ -213,10 +235,13 @@ body {
   left: 0;
   width: inherit;
   height: inherit;
-  border: 70px solid;
+  border: 80px solid;
   border-top: none;
   border-bottom-left-radius: 175px;
   border-bottom-right-radius: 175px;
+
+
+
   transform-origin: 50% 0;
   transform-style: preserve-3d;
   backface-visibility: hidden;
@@ -226,12 +251,14 @@ body {
 }
 
 .chart-skills li:nth-child(1) {
+  cursor: pointer;
   z-index: 5;
   border-color: $purple;
   animation-name: rotate-one;
 }
 
 .chart-skills li:nth-child(2) {
+  cursor: pointer;
   z-index: 4;
   border-color: $green;
   animation-name: rotate-two;
@@ -239,6 +266,7 @@ body {
 }
 
 .chart-skills li:nth-child(3) {
+  cursor: pointer;
   z-index: 3;
   border-color: $yellow;
   animation-name: rotate-three;
@@ -246,6 +274,7 @@ body {
 }
 
 .chart-skills li:nth-child(4) {
+  cursor: pointer;
   z-index: 2;
   border-color: $darkblue;
   animation-name: rotate-four;
@@ -269,35 +298,51 @@ body {
 .chart-skills li:nth-child(1) span {
   top: 33px;
   left: -60px;
+
+  color: #ffffff;
   transform: rotate(-126deg);
 }
 
 .chart-skills li:nth-child(2) span {
-  top: 34px;
+  top: 14px;
   left: -91px;
+  color: #ffffff;
+  max-width: 90px;
   transform: rotate(-162.2deg);
 }
 
 .chart-skills li:nth-child(3) span {
-  top: 38px;
-  left: -81px;
+  top: 24px;
+  left: -85px;
+  color: #ffffff;
+  max-width: 90px;
   transform: rotate(-200.4deg);
   animation-delay: 0.8s;
 }
 
 .chart-skills li:nth-child(4) span {
-  top: 48px;
-  left: -103px;
+  top: 30px;
+  left: -85px;
+  color: #ffffff;
+  max-width: 85px;
   transform: rotate(-236deg);
   animation-delay: 1.2s;
 }
 
 .chart-skills li:nth-child(5) span {
-  top: 48px;
-  left: -91px;
+  top: 31px;
+  left: -81px;
+  color: #ffffff;
+  max-width: 90px;
   transform: rotate(-271deg);
   animation-delay: 1.2s;
+
+    &:hover{
+      cursor: pointer;
+      color: #37887a !important;
+    }
 }
+
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -371,4 +416,24 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+@media screen and (min-width: 1920px) {
+//For Projectors or Higher Resolution Screens (Full HD)
+    .container {
+        width: 1890px;
+    }
+    .chart-position {
+      display: flex;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 38%;
+      left: -4.5%;
+}
+}
+@media screen and (min-width: 3840px) {
+//For 4K Displays (Ultra HD)
+    .container {
+        width: 3810px;
+    }
 }

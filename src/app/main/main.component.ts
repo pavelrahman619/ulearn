@@ -35,5 +35,12 @@ export class MainComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  resetFilter(event: Event) {
+    console.log("eventxdvzvz", event)
+  }
+  filterType(menu:any) {
+    console.log('menuSDcs', menu);
+  }
 }
