@@ -85,11 +85,6 @@ mat-grid-tile {
   background: $lightblue;
 }
 
-.organization-card {
-  width: 100%;
-  margin: 1rem;
-}
-
 .table {
   border-top: 1rem solid $lightblue;
 }
@@ -104,6 +99,12 @@ mat-grid-tile {
 }
 
 /* ORGANIZATION */
+
+.organization-card {
+  width: 100%;
+  margin: 1rem;
+}
+
 .organization {
   .org-mat-icon-1 {
     font-size: 2.5rem;
@@ -116,6 +117,12 @@ mat-grid-tile {
   h2 {
     font-size: 2rem;
   }
+}
+
+.formField{
+  width:21rem;
+  background:transparent;
+  border-radius: 25px;
 }
 
 /* TABLE PAGE */
