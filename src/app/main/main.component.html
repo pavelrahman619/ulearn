@@ -1,0 +1,49 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="chart-position">
+        <ul class="chart-skills">
+                <li>
+                  <span>CSS</span>
+                </li>
+                <li>
+                  <span>HTML</span>
+                </li>
+                <li>
+                  <span>PHP</span>
+                </li>
+                <li>
+                  <span>Python</span>
+                </li>
+          </ul>
+      </div>
+
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+        <div class="col-6">
+          <mat-icon aria-hidden="false">search<input type="Search"></mat-icon>
+        </div>
+        <div class="col-6">
+              <a href="#">View Filtered Data as Table</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" *ngFor="let n of numSequence(6)">
+          <mat-card class="organization-card" >
+              <mat-card-title>Organization Name</mat-card-title>
+                <mat-card-content>
+                  <p>Location of headquarters: <b>Adjumani</b></p>
+                  <p>Geographic Scope: <b>National</b></p>
+                  <p>Type of Organization: <b>Refugee-led organization</b></p>
+                  <p>Thematic areas of work: <b>Health</b></p>
+                  <p>Target Demographic: <b>Women</b></p>
+
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

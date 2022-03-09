@@ -13,5 +13,6 @@ export class AppComponent {
     numSequence(n: number): Array<number> {
       return Array(n);
     }
+
 }
 

@@ -14,6 +14,11 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import { TableComponent } from './table/table.component';
+import { OrganizationNameComponent } from './organization-name/organization-name.component';
+import { MainComponent } from './main/main.component';
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 
 
@@ -22,11 +27,14 @@ import { TableComponent } from './table/table.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
       HeaderComponent,
       FooterComponent,
-      TableComponent
+      TableComponent,
+      OrganizationNameComponent,
+      MainComponent,
+
    ],
   imports: [
     BrowserModule,
@@ -36,7 +44,8 @@ import { TableComponent } from './table/table.component';
     MatMenuModule,
     MatGridListModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule,
 
   ],
   providers: [],
