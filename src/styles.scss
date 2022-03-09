@@ -60,12 +60,15 @@ a{
   color:black;
 }
 
-
-
 mat-grid-tile {
-  background: lightblue;
+  background: $lightblue;
 }
 
 .organization-card {
   max-width: 400px;
+}
+
+
+.table{
+  border-top: 1rem solid $lightblue;
 }

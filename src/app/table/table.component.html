@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="d-flex justify-content-between">
+    <div>
+      <a href="#"><mat-icon>arrow_circle_left</mat-icon></a>
+      Active Filters: Adjumani, Bidibidi,
+    </div>
+    <div>
+      <a href="#">Export table as CSV</a>
+      <a href="#">Export table as PDF</a>
+    </div>
+  </div>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Organization Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Geographic Scope</th>
+        <th scope="col">Type of Organization</th>
+        <th scope="col">Thematic area</th>
+        <th scope="col">Target Demographic</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let n of [1,2,3,4,5,6]">
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum</td>
+        <td>Lorem Ipsum</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

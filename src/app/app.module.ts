@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -21,10 +22,11 @@ import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       HeaderComponent,
-      FooterComponent
+      FooterComponent,
+      TableComponent
    ],
   imports: [
     BrowserModule,
