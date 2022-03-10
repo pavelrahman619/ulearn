@@ -1,17 +1,20 @@
 <div class="main-header">
   <mat-toolbar>
-    <mat-toolbar-row class="main-toolbar">
-      <img src="assets/images/logo.png" alt="logo">
+    <div class="main-toolbar">
+      <mat-toolbar-row class="container">
+        <img src="assets/images/logo1.png" alt="logo">
 
-      <span class="example-spacer"></span>
+        <span class="example-spacer"></span>
 
-      <a href="#"><span class="toolbar-items">HOME</span></a>
-      <a href="#"><span class="toolbar-items">ABOUT US</span></a>
-      <a href="#"><span class="toolbar-items">PROJECT</span></a>
-      <a href="#"><span class="toolbar-items">DOCUMENT</span></a>
-      <a href="#"><span class="toolbar-items">NOTICE BOARD</span></a>
-      <a href="#"><span class="toolbar-items">CONTACT</span></a>
-    </mat-toolbar-row>
+        <a href="#"><span class="toolbar-items">HOME</span></a>
+        <a href="#"><span class="toolbar-items">ABOUT US</span></a>
+        <a href="#"><span class="toolbar-items">PROJECT</span></a>
+        <a href="#"><span class="toolbar-items">DOCUMENT</span></a>
+        <a href="#"><span class="toolbar-items">NOTICE BOARD</span></a>
+        <a href="#"><span class="toolbar-items">CONTACT</span></a>
+      </mat-toolbar-row>
+    </div>
+
 
     <mat-toolbar-row class="sub-toolbar">
       <div class="dropdown" *ngFor="let menuButton of menuButtons; let i=index">

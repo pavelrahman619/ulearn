@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row ">
+  <div class="row">
     <div class="col-sm-4 bg-white">
       <div class="chart-position">
       <span class="resetBtn" (click)="resetFilter($event)">Reset</span>
@@ -18,12 +18,25 @@
                 </li> -->
         </ul>
       </div>
+      <div class="filter-menu">
+        <button class="sub-toolbar-item">Clear All</button>
+        <br>
+        <p>Active Filters</p>
+        <ul>
+          <li>Adjumani</li>
+          <li>National</li>
+        </ul>
+      </div>
 
     </div>
     <div class="col-sm-8 mt-5">
       <div class="row">
         <div class="col-md-6">
-          <mat-icon aria-hidden="false" class="search-icon">search<input type="Search" class="formField"></mat-icon>
+          <!-- <mat-icon aria-hidden="false" class="search-icon">search<input type="Search" class="formField"></mat-icon> -->
+          <div class="input-icons">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <input type="Search" class="formField" placeholder="">
+          </div>
         </div>
         <div class="col-md-4 offset-md-2">
           <a href="#"><b>View Filtered Data as Table</b></a>
