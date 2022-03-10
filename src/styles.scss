@@ -92,6 +92,16 @@ mat-grid-tile {
   border-top: 1rem solid $lightblue;
 }
 
+/* HEADER STUFF */
+.dropdown-menu {
+  background-color: $grey;
+
+  .dropdown-item {
+    border-bottom: 4px solid white;
+    text-align: end;
+  }
+}
+
 /* BACKGROUND PAGE */
 .bg-org {
   background-image: url("https://images.unsplash.com/photo-1626303530832-eafcd9aa0592?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
