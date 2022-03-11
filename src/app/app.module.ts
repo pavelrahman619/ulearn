@@ -18,6 +18,7 @@ import { OrganizationNameComponent } from './organization-name/organization-name
 import { MainComponent } from './main/main.component';
 import {MatSelectModule} from '@angular/material/select';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 
@@ -29,14 +30,15 @@ import { SubHeaderComponent } from './sub-header/sub-header.component';
 
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
       HeaderComponent,
       FooterComponent,
       TableComponent,
       OrganizationNameComponent,
       MainComponent,
-      SubHeaderComponent
+      SubHeaderComponent,
+      HomepageComponent
    ],
   imports: [
     BrowserModule,
