@@ -1,11 +1,30 @@
+<mat-toolbar>
+  <mat-toolbar-row class="sub-toolbar">
+    <div class="dropdown" *ngFor="let menuButton of menuButtons; let i=index">
+      <button class="sub-toolbar-item dropdown-toggle" type="button" id="dropdownMenuButton1"
+        data-bs-toggle="dropdown" aria-expanded="false"
+        [ngClass]="'btn-' + i">
+        {{menuButton.menuName}}
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li *ngFor="let menuButtonList of menuButton.menuList; let i=index"><a class="dropdown-item" href="#">{{menuButtonList}}</a></li>
+      </ul>
+    </div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4 bg-white">
       <div class="chart-position">
-      <span class="resetBtn" (click)="resetFilter($event)">Reset</span>
+        <span class="resetBtn" (click)="resetFilter($event)">Reset</span>
         <ul class="chart-skills">
-          <li *ngFor="let menuButton of menuButtons" (click)="filterType(menuButton)">
-            <span class="grow">{{menuButton.menuName}}</span>
+          <li
+            *ngFor="let menuButton of menuButtons"
+            (click)="filterType(menuButton)"
+          >
+            <span class="grow">{{ menuButton.menuName }}</span>
           </li>
           <!-- <li>
                   <span>HTML</span>
@@ -19,15 +38,19 @@
         </ul>
       </div>
       <div class="filter-menu">
-        <button class="sub-toolbar-item">Clear All</button>
-        <br>
+        <button class="btn-clear">Clear All</button>
+        <br />
         <p>Active Filters</p>
-        <ul>
-          <li>Adjumani</li>
-          <li>National</li>
-        </ul>
-      </div>
 
+        <div class="chip">
+          John Doe
+          <span
+            class="closebtn"
+            onclick="this.parentElement.style.display='none'"
+            >&times;</span
+          >
+        </div>
+      </div>
     </div>
     <div class="col-sm-8 pt-5 organization">
       <div class="row">
@@ -35,16 +58,21 @@
           <!-- <mat-icon aria-hidden="false" class="search-icon">search<input type="Search" class="formField"></mat-icon> -->
           <div class="input-icons">
             <i class="fa-solid fa-magnifying-glass icon"></i>
-            <input type="Search" class="formField" placeholder="">
+            <input type="Search" class="formField" placeholder="" />
           </div>
         </div>
         <div class="col-md-4 offset-md-2">
-          <a href="#"><b><u>View Filtered Data as Table</u></b></a>
+          <a href="#"
+            ><b><u>View Filtered Data as Table</u></b></a
+          >
         </div>
       </div>
-      <br>
+      <br />
       <div class="row">
-        <div class="col-md-6 col-12 d-flex justify-content-center" *ngFor="let n of numSequence(6)">
+        <div
+          class="col-md-6 col-12 d-flex justify-content-center"
+          *ngFor="let n of numSequence(6)"
+        >
           <mat-card class="organization-card">
             <mat-card-title>Organization Name</mat-card-title>
             <mat-card-content>
@@ -53,9 +81,7 @@
               <p>Type of Organization: <b>Refugee-led organization</b></p>
               <p>Thematic areas of work: <b>Health</b></p>
               <p>Target Demographic: <b>Women</b></p>
-
             </mat-card-content>
-
           </mat-card>
         </div>
       </div>

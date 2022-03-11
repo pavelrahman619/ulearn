@@ -16,9 +16,12 @@ $yellow: #f19e3c;
 $darkblue: #373f88;
 $orange: #f16a3b;
 $lightblue: #00aeef;
-$grey: #E5E5E5;
-$grey-1:#DCDCDC;
+$grey: #e5e5e5;
+$grey-1: #dcdcdc;
 $darkgrey: #7a776c;
+$lightblack: #303434;
+
+$filter-color: #c6c1ae;
 
 /* BACKGROUND COLOR HELPERS */
 .bg-grey {
@@ -30,8 +33,8 @@ $darkgrey: #7a776c;
 }
 
 .main-header {
-  background-color: $lightblue;
-  padding: 1rem 0rem;
+  background-color: black;
+  padding-top: 2rem;
 }
 
 .example-spacer {
@@ -39,8 +42,8 @@ $darkgrey: #7a776c;
 }
 
 .toolbar-items {
-  margin-right: 1rem;
-  font-size: 18px;
+  margin-right: 3rem;
+  font-size: 13px;
 }
 
 .main-toolbar {
@@ -114,8 +117,8 @@ mat-grid-tile {
 }
 
 /* ORGANIZATION */
-.organization{
-  background-color:$grey;
+.organization {
+  background-color: $grey;
 }
 
 .organization-card {
@@ -449,6 +452,79 @@ body {
   align-items: center;
   padding: 4rem 0rem;
   margin-left: 65%;
+
+  .btn-clear {
+    border-radius: 20px;
+    width: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-style: none;
+    color: $filter-color;
+  }
+
+  p {
+    color: $filter-color;
+  }
+}
+
+.chip {
+  display: inline-block;
+  padding: 0rem 1rem;
+  height: 50px;
+  font-size: 15px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: $purple;
+  color: white;
+
+  .closebtn {
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .closebtn:hover {
+    color: #000;
+  }
+}
+
+/* FOOTER CSS */
+.main-footer {
+  background-color: $lightblue;
+  color: white;
+  padding: 6rem 0rem;
+  p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+  a {
+    color: white;
+  }
+
+  .footer-publications {
+    img {
+      height: 95px;
+      width: auto;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .quick-links{
+    margin-left:-1rem;
+  }
+}
+
+.sub-footer {
+  background-color: $lightblack;
+  color: white;
+  padding: 1rem 0rem;
 }
 
 /* MEDIA QUERY */

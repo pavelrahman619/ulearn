@@ -32,35 +32,13 @@ export class HeaderComponent implements OnInit {
   //   { id: 4, name: "Andrew " }
   // ];
 
-  menuButtons = [
-    {
-      menuName: 'Settlement',
-      menuList: ['Adjumani', 'BidiBidi'],
-    },
-    {
-      menuName: 'Geographic Scope',
-      menuList: ['Global/multi-country/foreign', 'National'],
-    },
-    {
-      menuName: 'Type of Organization',
-      menuList: ['Refugee-led organization', 'Community-based organization'],
-    },
-    {
-      menuName: 'Thematic Areas of Work',
-      menuList: ['Basic Needs', 'Camp Coordination and Management'],
-    },
-    {
-      menuName: 'Target Demographic',
-      menuList: ['Women', 'Children(< 18 Years)'],
-    },
-  ];
-
   // foods: Food[] = [
   //   {value: 'steak-0', viewValue: 'Steak'},
   //   {value: 'pizza-1', viewValue: 'Pizza'},
   //   {value: 'tacos-2', viewValue: 'Tacos'},
   // ];
 
+  menuItems = ['WHAT WE DO','RESOURCE CENTRE','WHO WE ARE','NEWS & STORIES','DATA','CONTACT US']
 
 
   constructor() {}
