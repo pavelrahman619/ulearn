@@ -65,36 +65,36 @@ export class MainComponent implements OnInit {
       var element = <HTMLElement>document.getElementsByClassName('chart-child').item(i);
       console.log('elekkzv', element);
       // element.style.transform = 'rotate(' + 72 + 'deg)';
-      element.style.transform = 'rotate(' + 360 / len * i + 'deg)';
-      switch (i) {
-        case 0:
-            element.style.left = '50%';
-            element.style.top = '-4%';
-            break;
-        case 1:
-            element.style.left = '67%';
-            element.style.top = '-1%';
-            break;
-        case 2:
-            element.style.left = '80%';
-            element.style.top = '2%';
-            break;
-        case 3:
-            console.log("It is a Wednesday.");
-            break;
-        case 4:
-            console.log("It is a Thursday.");
-            break;
-        case 5:
-            console.log("It is a Friday.");
-            break;
-        case 6:
-            console.log("It is a Saturday.");
-            break;
-        default:
-            console.log("No such day exists!");
-            break;
-      }
+      // element.style.transform = 'rotate(' + 360 / len * i + 'deg)';
+      // switch (i) {
+      //   case 0:
+      //       element.style.left = '50%';
+      //       element.style.top = '-4%';
+      //       break;
+      //   case 1:
+      //       element.style.left = '67%';
+      //       element.style.top = '-1%';
+      //       break;
+      //   case 2:
+      //       element.style.left = '80%';
+      //       element.style.top = '2%';
+      //       break;
+      //   case 3:
+      //       console.log("It is a Wednesday.");
+      //       break;
+      //   case 4:
+      //       console.log("It is a Thursday.");
+      //       break;
+      //   case 5:
+      //       console.log("It is a Friday.");
+      //       break;
+      //   case 6:
+      //       console.log("It is a Saturday.");
+      //       break;
+      //   default:
+      //       console.log("No such day exists!");
+      //       break;
+      // }
       // console.log('element', element);
 		}
   }

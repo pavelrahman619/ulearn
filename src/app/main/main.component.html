@@ -1,22 +1,89 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4 bg-white">
-      <div class="chart-parent" #parent>
-        <div class="chart-child 0" >
+      <div class="chart-parent" #parent style=" position: relative;
+  width: 500px;
+	height: 500px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 50%;
+	transform: rotate(0deg);
+	transition: transform 0.7s linear;">
+        <div class="chart-child 0" style=" position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    top: -4%;
+    left: 50%;
+    background-color: #C6C1AE;">
+          <span style=" width: 140px;
+      height: 45px;
+      padding: 5px;
+      position: absolute;
+      left: -48px;
+      top: -92px;
+      display: flex;
+      align-items: center;
+      transform: rotate(-90deg);
+      border-radius: 6px;
+      background-color: #C6C1AE;color: #ffffff;">data</span>
+        </div>
+        <div class="chart-child 1" style="position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: transform 0.7s linear;
+    transform: rotate(180deg);
+    left: 61%;
+    top: -2%;
+    background-color: #C6C1AE;">
+          <span style=" width: 140px;
+      height: 45px;
+      padding: 5px;
+      position: absolute;
+      top: 84px;
+      display: flex;
+      align-items: center;
+      left: -77px;
+      color: #ffffff;
+      transform: rotate(-253deg); border-radius: 6px;
+      background-color: #C6C1AE;" >data</span>
+        </div>
+         <div class="chart-child 2" style="position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: transform 0.7s linear;
+    transform: rotate(270deg);
+    left: 71%;
+    top: 3%;
+    background-color: #C6C1AE;">
           <span>data</span>
         </div>
-        <div class="chart-child 1" >
+        <div class="chart-child 3" style="position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: transform 0.7s linear;
+    transform: rotate(270deg);
+    left: 81%;
+    top: 9%;
+    background-color: #C6C1AE;" >
           <span>data</span>
         </div>
-         <div class="chart-child 2" >
+           <div class="chart-child 4" style="position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: transform 0.7s linear;
+    transform: rotate(270deg);
+    left: 91%;
+    top: 21%;
+    background-color: #C6C1AE;">
           <span>data</span>
         </div>
-           <div class="chart-child 3" >
-          <span>data</span>
-        </div>
-           <div class="chart-child 4" >
-          <span>data</span>
-        </div>
+
         <!-- <div class="chart-position">
         <span class="resetBtn" (click)="resetFilter($event)">Reset</span>
           <ul class="chart-skills">
