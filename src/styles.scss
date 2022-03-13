@@ -118,16 +118,18 @@ mat-grid-tile {
 }
 
 /* ORGANIZATION */
-.organization {
-  background-color: $grey;
-}
 
 .organization-card {
   width: 100%;
   margin: 1rem;
+
+  .organization-card-logo {
+    margin-left: 9rem;
+  }
 }
 
 .organization {
+  background-color: $grey;
   .org-mat-icon-1 {
     font-size: 2.5rem;
   }
@@ -565,7 +567,9 @@ body {
 }
 
 .input-group {
-  width: fit-content !important;
+  width: 25rem;
+  margin-left: 1rem;
+  border-radius: 25px;
 
   .form-control {
     background-color: $lightblue !important;
@@ -573,6 +577,8 @@ body {
   }
   button {
     background-color: $lightblue !important;
+    margin-left: -2rem !important;
+    z-index: 4 !important;
   }
 }
 
