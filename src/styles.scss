@@ -16,6 +16,7 @@ $yellow: #f19e3c;
 $darkblue: #373f88;
 $orange: #f16a3b;
 $lightblue: #00aeef;
+$lighterblue: #8adaf8;
 $grey: #e5e5e5;
 $grey-1: #dcdcdc;
 $darkgrey: #7a776c;
@@ -529,6 +530,10 @@ body {
 
 /* HOMEPAGE */
 
+.fa {
+  color: white;
+}
+
 .hero-image {
   height: 80%;
   background-image: url("assets/images/header-image-girl-phone1-scaled.jpg");
@@ -553,6 +558,12 @@ body {
     }
   }
 }
+
+.hero-dots {
+  width: -webkit-fill-available;
+  margin-top: -2%;
+}
+
 .input-group {
   width: fit-content !important;
 
@@ -562,6 +573,38 @@ body {
   }
   button {
     background-color: $lightblue !important;
+  }
+}
+
+.homepage-card {
+  mat-card {
+    justify-content: center !important;
+    text-align: center !important;
+    background-color: $lighterblue !important;
+    border-radius: 48px !important;
+    height: 20rem;
+  }
+
+  .col-md-4 {
+    padding: 4rem 2rem !important;
+  }
+
+  mat-card-title {
+    padding: 2rem 0rem;
+  }
+
+  img {
+    margin-top: -12% !important;
+  }
+
+  button {
+    border: 1px solid black;
+    padding: 0.5rem 2rem;
+    border-radius: 13px;
+
+    &:hover {
+      background-color: white;
+    }
   }
 }
 
