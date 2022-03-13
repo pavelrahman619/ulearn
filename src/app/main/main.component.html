@@ -1,16 +1,22 @@
 <mat-toolbar>
   <mat-toolbar-row class="sub-toolbar">
-    <div class="dropdown" *ngFor="let menuButton of menuButtons; let i=index">
-      <button class="sub-toolbar-item dropdown-toggle" type="button" id="dropdownMenuButton1"
-        data-bs-toggle="dropdown" aria-expanded="false"
-        [ngClass]="'btn-' + i">
-        {{menuButton.menuName}}
+    <div class="dropdown" *ngFor="let menuButton of menuButtons; let i = index">
+      <button
+        class="sub-toolbar-item dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        [ngClass]="'btn-' + i"
+      >
+        {{ menuButton.menuName }}
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li *ngFor="let menuButtonList of menuButton.menuList; let i=index"><a class="dropdown-item" href="#">{{menuButtonList}}</a></li>
+        <li *ngFor="let menuButtonList of menuButton.menuList; let i = index">
+          <a class="dropdown-item" href="#">{{ menuButtonList }}</a>
+        </li>
       </ul>
     </div>
-
   </mat-toolbar-row>
 </mat-toolbar>
 
@@ -56,9 +62,20 @@
       <div class="row">
         <div class="col-md-6">
           <!-- <mat-icon aria-hidden="false" class="search-icon">search<input type="Search" class="formField"></mat-icon> -->
-          <div class="input-icons">
+          <!-- <div class="input-icons">
             <i class="fa-solid fa-magnifying-glass icon"></i>
             <input type="Search" class="formField" placeholder="" />
+          </div> -->
+          <div class="input-group">
+            <input
+              class="form-control rounded-pill"
+              type="text"
+              placeholder="Search"
+              id="search-input"
+            />
+            <button class="btn rounded-pill" type="button">
+              <i class="fa fa-search"></i>
+            </button>
           </div>
         </div>
         <div class="col-md-4 offset-md-2">
@@ -74,7 +91,10 @@
           *ngFor="let n of numSequence(6)"
         >
           <mat-card class="organization-card">
-            <mat-card-title>Organization Name</mat-card-title>
+            <mat-card-title
+              >Organization Name
+              <img class="organization-card-logo" matCardAvatar src="assets/images/avatar-logo.png" />
+            </mat-card-title>
             <mat-card-content>
               <p>Location of headquarters: <b>Adjumani</b></p>
               <p>Geographic Scope: <b>National</b></p>
