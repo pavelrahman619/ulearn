@@ -52,6 +52,15 @@ $filter-color: #c6c1ae;
   padding: 0.5rem 0rem !important;
 }
 
+.bg-dots{
+  background-image: url("assets/images/bluedots.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:$grey-1;
+  height: 73px;
+}
+
 .sub-toolbar {
   display:flex;
   justify-content: center;
