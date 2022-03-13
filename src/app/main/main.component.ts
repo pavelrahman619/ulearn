@@ -12,10 +12,6 @@ export class MainComponent implements OnInit {
       menuList: ['Adjumani', 'BidiBidi'],
     },
     {
-      menuName: 'Geographic Scope',
-      menuList: ['Global/multi-country/foreign', 'National'],
-    },
-    {
       menuName: 'Type of Organization',
       menuList: ['Refugee-led organization', 'Community-based organization'],
     },
