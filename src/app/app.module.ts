@@ -19,6 +19,8 @@ import { MainComponent } from './main/main.component';
 import {MatSelectModule} from '@angular/material/select';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { MapComponent } from './map/map.component';
+import { MapArchComponent } from './map-arch/map-arch.component';
 
 
 
@@ -30,7 +32,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
-  declarations: [		
+  declarations: [				
     AppComponent,
       HeaderComponent,
       FooterComponent,
@@ -38,7 +40,9 @@ import { HomepageComponent } from './homepage/homepage.component';
       OrganizationNameComponent,
       MainComponent,
       SubHeaderComponent,
-      HomepageComponent
+      HomepageComponent,
+      MapComponent,
+      MapArchComponent
    ],
   imports: [
     BrowserModule,

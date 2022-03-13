@@ -1,0 +1,32 @@
+@import "../../styles.scss";
+
+/* MAPS PAGE */
+.hero-image.map {
+  @extend .hero-image;
+  background-image: url("../../assets/images/banner.jpg");
+  height: 50%;
+
+  .hero-text {
+    top: 35%;
+    left: 20%;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.map-tutorial-card {
+  background-color: $grey-1;
+
+  // ul {
+  //   list-style: none;
+  //   li::before {
+  //     content: "•";
+  //     color: $lightblue;
+  //     display: inline-block;
+  //     width: 1rem;
+  //     margin-left: -1.2rem;
+  //   }
+  // }
+}
