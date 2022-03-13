@@ -596,18 +596,31 @@ body {
   img {
     margin-top: -12% !important;
   }
+}
 
-  button {
-    border: 1px solid black;
-    padding: 0.5rem 2rem;
-    border-radius: 13px;
 
-    &:hover {
-      background-color: white;
-    }
+/* CUSTOM BUTTONS */
+.custom-btn-1 {
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+  border-radius: 13px;
+  background-color:transparent;
+
+  &:hover {
+    background-color: white;
   }
 }
 
+.custom-btn-2{
+  padding: 0.5rem 4rem;
+  border-radius:5px;
+  background-color:$lightblack;
+  color:white;
+
+  &:hover {
+    background-color: black;
+  }
+}
 
 
 /* MEDIA QUERY */

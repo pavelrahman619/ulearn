@@ -20,6 +20,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MapComponent } from './map/map.component';
+import { MapArchComponent } from './map-arch/map-arch.component';
 
 
 
@@ -31,7 +32,7 @@ import { MapComponent } from './map/map.component';
 
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
       HeaderComponent,
       FooterComponent,
@@ -40,7 +41,8 @@ import { MapComponent } from './map/map.component';
       MainComponent,
       SubHeaderComponent,
       HomepageComponent,
-      MapComponent
+      MapComponent,
+      MapArchComponent
    ],
   imports: [
     BrowserModule,

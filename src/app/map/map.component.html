@@ -1,12 +1,66 @@
 <div class="hero-image map">
   <div class="hero-text">
-    <h1>
-      U-Learn DATA VISUALIZATION
-    </h1>
+    <h1>U-Learn DATA VISUALIZATION</h1>
   </div>
 </div>
+
 <img
   class="hero-dots"
   src="assets/images/Asset-5dotssmall-2048x146.png"
   alt="dots"
 />
+
+<div class="map-section bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="text-center">
+          <button class="custom-btn-1">Explore Visualization</button>
+        </div>
+
+        <mat-card class="map-tutorial-card">
+          <mat-card-content>
+            <ul>
+              <li>
+                In this portal, you can easily find an organization working in a
+                settlement within a specific capacity. To start, click on the
+                name of a settlement to see which organizations are working
+                there. You can select more than one settlement. To unselect,
+                click on the name again. Click on the next button to proceed.
+                You will be taken to an advanced page search where you will see
+                the organizations that are working on the selected settlements.
+              </li>
+              <li>
+                In the advanced search page, you can select multiple filters at
+                a time to narrow down the search. You can select from either the
+                drop-down menu on top or from the circular filters on left, or
+                with a combination of both. As you select a filter, it will be
+                shown to your left. You can click on the x button beside the
+                filter to clear that filter. To remove all filters click on the
+                "clear all" option on top or the "reset" option on the left. If
+                you already know the name of an organization, you can search for
+                it on the search bar.
+              </li>
+              <li>
+                As you search or use filter, you will see cards with
+                organization names reflecting your search. Click on any of the
+                cards to learn more about the organization and their work. You
+                can also view the filtered data as a table by clicking on the
+                "view Filtered Data as table" option. Furthermore, you can
+                export that data as CSV or PDF.
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <app-map-arch></app-map-arch>
+        </div>
+        <div class="text-center">
+          <button class="custom-btn-2">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
