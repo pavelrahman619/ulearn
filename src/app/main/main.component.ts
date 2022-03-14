@@ -36,7 +36,7 @@ export class MainComponent implements OnInit {
   resetFilter(event: Event) {
     console.log("eventxdvzvz", event)
   }
-  filterType(menu:any) {
+  filterType(menu: any) {
     console.log('menuSDcs', menu);
   }
 }

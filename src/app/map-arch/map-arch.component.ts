@@ -12,4 +12,11 @@ export class MapArchComponent implements OnInit {
   ngOnInit() {
   }
 
+  getThis(name: string) {
+    console.log(name);
+  }
+
+  thisEvent(event: Event){
+    console.log('Event printout: ', event);
+  }
 }

@@ -1,0 +1,34 @@
+@import "../../styles.scss";
+
+// .settlement-text {
+//   &:hover {
+//     fill: white !important;
+//   }
+// }
+
+// .st6 {
+//   &:hover {
+//     fill: $purple !important;
+
+//     .settlement-text {
+//       fill: white !important;
+//     }
+//   }
+// }
+// #_x3C_Adjumani_x3E_
+
+[id^=_x3C_] {
+  &:hover {
+    path {
+      fill: $purple !important;
+    }
+
+    circle {
+      fill: $purple !important;
+    }
+
+    text {
+      fill: white !important;
+    }
+  }
+}
