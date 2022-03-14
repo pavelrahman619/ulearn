@@ -134,7 +134,8 @@ mat-grid-tile {
   margin: 1rem;
 
   .organization-card-logo {
-    margin-left: 9rem;
+    // margin-left: 9rem;
+    margin: -1rem 1rem;
   }
 }
 
@@ -435,16 +436,16 @@ body {
   margin-left: 65%;
 
   .btn-clear {
-    border-radius: 20px;
+    border-radius: 10px;
     width: auto;
     padding: 0.5rem 1rem;
     text-align: center;
     border-style: none;
-    color: $filter-color;
+    color: black;
   }
 
   p {
-    color: $filter-color;
+    color: black;
   }
 }
 

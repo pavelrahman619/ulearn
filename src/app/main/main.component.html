@@ -97,13 +97,17 @@
           *ngFor="let n of numSequence(6)"
         >
           <mat-card class="organization-card">
-            <mat-card-title
-              >Organization Name
-              <img
-                class="organization-card-logo"
-                matCardAvatar
-                src="assets/images/avatar-logo.png"
-              />
+            <mat-card-title>
+              <div class="row">
+                <div class="col-md-9">Organization Name</div>
+                <div class="col-md-3">
+                  <img
+                    class="organization-card-logo"
+                    matCardAvatar
+                    src="assets/images/avatar-logo.png"
+                  />
+                </div>
+              </div>
             </mat-card-title>
             <mat-card-content>
               <p>Location of headquarters: <b>Adjumani</b></p>
